@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/eu.JPG" alt="Foto de Erik" class="foto-perfil">
+        <h1>Erik Rodrigues</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam molestias
+                rerum adipisci illo nobis, optio quos odio quae reprehenderit cum unde dolorum recusandae dolor quia
+                repellat, et voluptatum maiores?</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="img/projeto1.png" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Loja de carros</h3>
+                    <p class="paragrafo-projetos">Loja virtual moderna com animações suaves.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto2.png" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Pagina de viagens</h3>
+                    <p class="paragrafo-projetos">Loja virtual moderna com animações suaves.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto3.png" alt="projeto1" class="projetos-imagem">
+                <div class="caixa-texto-projetos">
+                    <h3 class="info-projetos">Microsoft</h3>
+                    <p class="paragrafo-projetos">Loja virtual moderna com animações suaves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="campo-form" rows="4" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
